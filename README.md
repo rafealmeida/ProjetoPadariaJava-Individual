@@ -30,5 +30,5 @@ Antes de iniciar, verifique se você possui instalado:
 - Docker  
 - MongoDB (local ou via Docker)
 
-Autora: Raquel Fernandes com o apoio de
+👩🏻‍💻 Autora: Raquel Fernandes com o apoio de
 Técnico em Desenvolvimento de Sistemas, Senac - DF
