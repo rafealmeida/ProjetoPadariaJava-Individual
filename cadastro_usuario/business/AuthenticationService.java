@@ -23,10 +23,8 @@ public class AuthenticationService {
             throw new RuntimeException("Usuário já existe!");
         }
 
-        // Senha em texto puro (não seguro)
         String rawPassword = password;
 
-        // Converte string para enum de role
         UserRole roleEnum;
         try {
             roleEnum = UserRole.valueOf(roleStr.toUpperCase());
@@ -34,10 +32,8 @@ public class AuthenticationService {
             throw new RuntimeException("Role inválida: " + roleStr);
         }
 
-        // Cria novo usuário
         User newUser = new User(login, rawPassword, roleEnum);
 
-        // Salva no banco
         repository.save(newUser);
     }
 
