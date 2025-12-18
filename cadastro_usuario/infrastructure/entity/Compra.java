@@ -9,7 +9,7 @@ import lombok.*;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@Document(collection = "compras") // Mongo usa @Document, não @Table
+@Document(collection = "compras")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -18,13 +18,12 @@ import java.util.List;
 public class Compra {
 
     @Id
-    private String id; // String para MongoDB
+    private String id;
 
-    @DBRef // Referência para o documento de Usuario
+    @DBRef
     private Usuario usuario;
-    // OBS: Note que aqui é a classe "Usuario" (Entidade), NÃO "UsuarioService"
 
-    @DBRef // Referência para a lista de Padarias
+    @DBRef 
     private List<Padaria> produtos;
 
     @Field("data_compra")
