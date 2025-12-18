@@ -7,7 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Document(collection = "padarias") // Correto para MongoDB
+@Document(collection = "padarias")
 @Getter
 @Setter
 @AllArgsConstructor
@@ -15,8 +15,7 @@ import lombok.Setter;
 public class Padaria {
 
     @Id
-    private String id; // Use String para o ID automático do Mongo
-
+    private String id;
     private String produtos;
     private Double valor;
 }
