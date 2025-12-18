@@ -25,6 +25,6 @@ public enum UserRole {
                 return role;
             }
         }
-        throw new IllegalArgumentException("Invalid role: " + value); // corrigido
+        throw new IllegalArgumentException("Invalid role: " + value); 
     }
 }
