@@ -8,5 +8,5 @@ public interface UsuarioRepository extends MongoRepository<Usuario, String> {
 
     Optional<Usuario> findByCpf(String cpf);
 
-    void deleteByCpf(String cpf); // O @Transactional não é estritamente necessário aqui agora
+    void deleteByCpf(String cpf);
 }
