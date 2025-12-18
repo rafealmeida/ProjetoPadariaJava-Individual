@@ -16,21 +16,17 @@ import java.util.List;
 public class PadariaService {
 
     public Padaria CadastrProduto(Padaria padaria) {
-        // lógica de salvar
         return padaria;
     }
 
     public Padaria BuscaPadariaPorId(String id) {
-        // lógica de buscar
         return null;
     }
 
     public void deletarProdutoPorId(String id) {
-        // lógica de deletar
     }
 
     public Padaria AtualizaProdutoPorId(String id, Padaria padaria) {
-        // lógica de atualizar
         return padaria;
     }
 }
